@@ -27,3 +27,71 @@
     font-family: var(--BoldFontSet);
     font-size: min(8vw, 16px);
 }
+
+#Main h1 {
+    position: relative;
+    margin: 3px 0 6px 0;
+    padding-left: 8px;
+    border-left: dotted 3px var(--TextColor);
+    font-family: var(--BoldFontSet);
+    font-size: min(8vw, 26px);
+    text-align: left;
+}
+
+#Main h1::before {
+    z-index: -1;
+    content: "";
+    background-color:  var(--TextColor);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+#Main h2 {
+    position: relative;
+    margin: 3px 0 6px 0;
+    padding-left: 8px;
+    border-left: dotted 3px var(--TextColor);
+    font-family: var(--TextFontSet);
+    font-size: min(8vw, 22px);
+    text-align: left;
+}
+
+#Main h2::before {
+    z-index: -1;
+    content: "";
+    background-color:  var(--TextColor);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+#Main h3 {
+    font-family: var(--TextFontSet);
+    font-size: min(8vw, 18px);
+    text-align: left;
+}
+
+#Main h4 {
+    font-family: var(--TextFontSet);
+    font-size: min(8vw, 16px);
+    text-align: left;
+}
+
+#Main h5 {
+    font-family: var(--TextFontSet);
+    font-size: min(8vw, 14px);
+    text-align: left;
+}
+
+#Main h6 {
+    font-family: var(--TextFontSet);
+    font-size: min(8vw, 12px);
+    text-align: left;
+}
+
+#Main a,#Main a:visited,#Main a:link {
+    color: var(--AccentColor);
+}
