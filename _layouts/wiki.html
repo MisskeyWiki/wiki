@@ -3,9 +3,34 @@
   <head>
     <meta charset='utf-8'>
     <title>{{ page.title }} - Misskey wiki</title>
+    <link rel="stylesheet" href="/assets/css/flat.css">
+    <link rel="stylesheet" href="/assets/css/frame.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
   </head>
-
   <body>
-    {{ content }}
+    <header id="PcHeader">
+        <div>
+            <h1 class="m3 themeNaviTextColor">MisskeyWiki</h1>
+        </div>
+        <div>
+            <nav>
+                <a class="m4 themeNaviTextColor" href="/">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <header id="MobHeader">
+        <div>
+            <h1 class="m3 themeNaviTextColor">MisskeyWiki</h1>
+        </div>
+        <div>
+            <button><img class="naviIcon" src="/assets/img/icon/menu.webp" alt="Menu"></button>
+        </div>
+    </header>
+
+    <div id="Main">
+        {{ content }}
+        {{ site.pages }}
+    </div>
   </body>
 </html>

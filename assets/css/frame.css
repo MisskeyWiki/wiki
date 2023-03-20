@@ -1,0 +1,61 @@
+:root {
+    --BaseColor: #101010;
+    --NaviBaseColor: #161616;
+    --TextColor: #FFFFFF;
+    --NaviTextColor: #FFFFFF;
+}
+
+body {
+    background-color: var(--BaseColor);
+}
+
+/* PC */
+@media screen and (min-width: 620px) {
+    #MobHeader {
+        display: none;
+    }
+
+    #PcHeader {
+        background-color: var(--NaviBaseColor);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3px 8px 3px 6px;
+    }
+}
+
+/* Mob */
+@media screen and (max-width: 620px) {
+    #PcHeader {
+        display: none;
+    }
+
+    #MobHeader {
+        background-color: var(--NaviBaseColor);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3px 8px 3px 6px;
+    }
+}
+
+.naviIcon {
+    width: 30px;
+    margin: 0 auto 0 auto;
+}
+
+.themeTextColor,.themeTextColor:link,.themeTextColor:visited {
+    color: var(--TextColor);
+}
+
+.themeNaviTextColor,.themeNaviTextColor:link,.themeNaviTextColor:visited {
+    color: var(--NaviTextColor);
+}
+
+#Main *{
+    color: var(--TextColor);
+}
+
+#Main *{
+    color: var(--TextColor);
+}

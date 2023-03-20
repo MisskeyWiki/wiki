@@ -1,0 +1,29 @@
+.m1 {
+    font-family: var(--BoldFontSet);
+    font-size: min(8vw, 36px);
+}
+
+.m2 {
+    font-family: var(--BoldFontSet);
+    font-size: min(8vw, 32px);
+}
+
+.m3 {
+    font-family: var(--BoldFontSet);
+    font-size: min(8vw, 26px);
+}
+
+.m4 {
+    font-family: var(--BoldFontSet);
+    font-size: min(8vw, 22px);
+}
+
+.m5 {
+    font-family: var(--BoldFontSet);
+    font-size: min(8vw, 18px);
+}
+
+.m6 {
+    font-family: var(--BoldFontSet);
+    font-size: min(8vw, 16px);
+}

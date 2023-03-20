@@ -1,0 +1,276 @@
+/*
+License: MIT License
+Copyright: Meziro(https://github.com/Meziro039/FlatCSS)
+Version:0.0.0β.Mw(2023/03/20)
+*/
+
+@layer flat {
+    /* Accessibility */
+    ::selection {
+        color: #FFFFFF;
+        background: rgba(51, 143, 255, 0.9);
+        margin: 0;
+        padding: 0;
+    }
+
+    /* SetUp */
+    * {
+        box-sizing: border-box;
+    }
+
+    *,input,textarea,select,button {
+        font-family: "system-ui";
+        font-display: swap;
+        word-break: break-all;
+    }
+
+    html {
+        touch-action: manipulation;
+    }
+
+    /* Body */
+    body {
+        margin: 0;
+        touch-action: manipulation;
+    }
+
+    /* Block */
+    address,article,aside,blockquote,details,dd,div,dl,dt,figure,footer,form,h1,h2,h3,h4,h5,h6,img,li,menu,nav,ol,p,ruby,section,ul {
+        display: block;
+        color: #000000;
+        background-color: rgba(0, 0, 0, 0);
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        line-height: 1.3;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        quotes: none;
+        text-decoration: none;
+    }
+
+    /* Inline */
+    a,abbr,acronym,b,button,bdo,caption,cite,code,del,dfn,em,figcaption,i,ins,kbd,keygen,label,legend,mark,meter,meter,output,pre,q,rb,rt,s,samp,select,small,span,strong,sub,summary,sup,time,textarea,var {
+        display: inline;
+        color: #000000;
+        background-color: rgba(0, 0, 0, 0);
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        line-height: 1.3;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        quotes: none;
+        text-decoration: none;
+        vertical-align: baseline;
+    }
+
+    a:link {
+        color: #0000ff;
+    }
+
+    a:visited {
+        color: #8a2be2;
+    }
+
+    b,strong {
+        font-weight: bold;
+    }
+
+    button {
+        border: solid 1px #000000;
+    }
+
+    code {
+        font-family: "monospace";
+    }
+
+    del,s {
+        text-decoration: line-through solid 1px #000000;
+    }
+
+    mark {
+        background-color: #ffff00;
+    }
+
+    meter {
+        width: 100px;
+        height: 20px;
+    }
+
+    select {
+        border: solid 1px #000000;
+        width: auto;
+        -webkit-tap-highlight-color : rgba(0,0,0,0);
+        -webkit-border-radius : 0;
+        -webkit-appearance : none;
+    }
+
+    select:focus {
+        border: 0;
+        border-radius: 0;
+        border: solid 2px #000000;
+        outline: none;
+    }
+
+    small {
+        font-size: 8px;
+    }
+
+    sub {
+        font-size: 8px;
+        vertical-align: bottom;
+    }
+
+    sup {
+        font-size: 8px;
+        vertical-align: top;
+    }
+
+    textarea {
+        border: solid 1px #000000;
+        -webkit-tap-highlight-color : rgba(0,0,0,0);
+        -webkit-border-radius : 0;
+        -webkit-appearance : none;
+    }
+
+    textarea:focus {
+        border: 0;
+        border-radius: 0;
+        border: solid 2px #000000;
+        outline: none;
+    }
+
+    /* Input */
+    input {
+        color: #000000;
+    }
+
+    input[type="text"],input[type="search"],input[type="tel"],input[type="url"],input[type="email"],input[type="password"],input[type="datetime"],input[type="number"] {
+        color: #000000;
+        background-color: #FFFFFF;
+        /* margin: 0; */
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        /* width: 100px; */
+        height: auto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        outline: none;
+        quotes: none;
+        text-decoration: none;
+        vertical-align: baseline;
+        -webkit-border-radius : 0;
+        -webkit-appearance: none;
+    }
+
+    input[type="tel"]:invalid,input[type="url"]:invalid,input[type="email"]:invalid,input[type="number"]:invalid {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+
+    ::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+    }
+
+    input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime-local"] {
+        color: #000000;
+        background-color: rgba(0, 0, 0, 0.01);
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        width: 100px;
+        height: auto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        outline: none;
+        quotes: none;
+        text-decoration: none;
+        vertical-align: baseline;
+        -webkit-border-radius : 0;
+    }
+    
+    input[type="text"],input[type="search"],input[type="tel"],input[type="url"],input[type="email"],input[type="password"],input[type="datetime"],input[type="number"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime-local"],input[type=""],input[type=""],input[type=""] {
+        border: solid 1px #000000;
+    }
+
+    input[type="range"] {
+        width: 100px;
+    }
+
+    input[type="color"] {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        width: 100px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        outline: none;
+        text-decoration: none;
+        vertical-align: baseline;
+        -webkit-border-radius : 0;
+    }
+
+    input[type="submit"],input[type="reset"],input[type="button"] {
+        color: #000000;
+        background-color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+        border: solid 1px #000000;
+        border-radius: 0;
+        height: auto;
+        font-style: normal;
+        font-weight: normal;
+        outline: none;
+        quotes: none;
+        text-decoration: none;
+        vertical-align: baseline;
+        -webkit-border-radius : 0;
+        -webkit-appearance: none;
+    }
+
+    /* Line */
+    hr {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        height: 1px;
+    }
+
+    /* Table */
+    table {
+        display: table;
+        border: solid 1px #000000;
+        border-collapse: collapse;
+    }
+
+    td,th {
+        margin: 0;
+        border: solid 1px #000000;
+        border-collapse: collapse;
+        line-height: 1;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    thead,tbody,tfoot {
+
+    }
+
+    *::-webkit-scrollbar {
+        display:none;
+    }
+}
