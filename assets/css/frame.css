@@ -16,7 +16,7 @@
 
 :root {
     --BaseColor: #101010;
-    --NaviBaseColor: #161616;
+    --NaviBaseColor: #262626;
     --TextColor: #FFFFFF;
     --NaviTextColor: #FFFFFF;
     --AccentColor: #86b300;
@@ -70,7 +70,8 @@ body {
 }
 
 #Main {
-    color: var(--TextColor);
+    width: 80%;
+    margin: 0 auto 0 auto;
 }
 
 #Main *{
