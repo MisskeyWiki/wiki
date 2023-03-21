@@ -69,6 +69,10 @@ body {
     color: var(--NaviTextColor);
 }
 
+.accentTextColor,.accentTextColor:link,.accentTextColor:visited {
+    color: var(--AccentColor);
+}
+
 #Main {
     width: 80%;
     margin: 36px auto 0 auto;
@@ -76,4 +80,12 @@ body {
 
 #Main *{
     color: var(--TextColor);
+}
+
+.block {
+    background-color: var(--NaviBaseColor);
+    min-height: 120px;
+    margin: 16px 0 16px 0;
+    padding: 26px;
+    border-radius: 16px;
 }

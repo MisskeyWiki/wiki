@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>{{ page.title }} - Misskey wiki</title>
+    <link rel="stylesheet" href="/assets/css/flat.css">
+    <link rel="stylesheet" href="/assets/css/frame.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+  </head>
+  <body>
+    <header id="PcHeader">
+        <div>
+            <h1 class="m3 themeNaviTextColor">MisskeyWiki</h1>
+        </div>
+        <div>
+            <nav>
+                <a class="m4 themeNaviTextColor" href="/">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <header id="MobHeader">
+        <div>
+            <h1 class="m3 themeNaviTextColor">MisskeyWiki</h1>
+        </div>
+        <div>
+            <button><img class="naviIcon" src="/assets/img/icon/menu.webp" alt="Menu"></button>
+        </div>
+    </header>
+
+    <div id="Main">
+        <div id="Top">
+            <h1 class="m1">Home</h1>
+            <p>MisskeyWikiへようこそ。<br>*Misskeyを技術的な内容に関しては<a href="https://misskey-ｈub.net">Misskey-Hub</a>を参照して下さい。</p>
+        </div>
+        <style>
+            #Top {
+                background-color: var(--NaviBaseColor);
+                padding: 26px;
+                border: solid 3px var(--AccentColor);
+                border-radius: 16px;
+            }
+
+            #Top h1 {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+        </style>
+        <div class="block">
+            {{ content }}
+        </div>
+        <div id="Share" style="display: none;">
+            <a href="">Copy</a>
+            <a href="">Misskey</a>
+            <a href="">Mastodon</a>
+            <a href="">Twitter</a>
+            <a href="">LINE</a>
+            <a href="">Pocket</a>
+        </div>
+    </div>
+
+    <footer style="text-align: center;">
+        <a class="accentTextColor" href="https://github.com/misskeywiki/wiki">Github</a>
+    </footer>
+  </body>
+</html>
