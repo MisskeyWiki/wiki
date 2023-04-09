@@ -14,7 +14,7 @@
 
 :root {
     --AccentColor: #86b300;
-    --LinkColor: #8bb900;
+    --LinkColor: rgb(140, 186, 0);
     --SubAccentColor: #ff9100;
 
     --BaseColor: #000000;
@@ -91,7 +91,7 @@ header img {
     font-family: "TextFont", "system-ui";
 }
 
-#Content,#Content div,#Content span,#Content p {
+#Content,#Content div,#Content span,#Content p,#Content code,#Content strong {
     color: var(--BlockTextColor);
     font-size: clamp(12px, 5.5vw, 16px);
     line-height: 1.4;
@@ -159,10 +159,21 @@ header img {
     font-size: clamp(12px, 5.5vw, 16px);
 }
 
+#Content code {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--SubAccentColor);
+    border-radius: 3px;
+}
+
 #Content blockquote {
     background-color: rgba(0, 0, 0, 0.3);
     padding-left: 6px;
     border-left: solid 3px var(--SubAccentColor);
+}
+
+#Content strong {
+    border-bottom: solid 2px var(--SubAccentColor);
+    font-weight: normal;
 }
 
 #Share {
