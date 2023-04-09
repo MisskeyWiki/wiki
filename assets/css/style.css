@@ -15,6 +15,7 @@
 :root {
     --AccentColor: #86b300;
     --LinkColor: #8bb900;
+    --SubAccentColor: #ff9100;
 
     --BaseColor: #000000;
 
@@ -101,6 +102,7 @@ header img {
     margin: 6px 0 6px 0 ;
     font-family: var(--BoldFont);
     font-size: clamp(20px, 9vw, 34px);
+    padding-left: 8px;
     border-bottom: solid 3px var(--AccentColor);
     border-left: solid 3px var(--AccentColor);
 }
@@ -110,13 +112,14 @@ header img {
     margin: 6px 0 6px 0 ;
     font-family: var(--BoldFont);
     font-size: clamp(18px, 8vw, 32px);
+    padding-left: 8px;
     border-left: solid 3px var(--AccentColor);
 }
 
 #Content h3 {
     color: var(--BlockTextColor);
     margin: 6px 0 6px 0 ;
-    padding-left: 1px;
+    padding-left: 7px;
     font-family: var(--TextFont);
     font-size: clamp(16px, 7vw, 26px);
     border-left: solid 2px var(--AccentColor);
@@ -125,7 +128,7 @@ header img {
 #Content h4 {
     color: var(--BlockTextColor);
     margin: 6px 0 6px 0 ;
-    padding-left: 1px;
+    padding-left: 7px;
     font-family: var(--TextFont);
     font-size: clamp(14px, 6.5vw, 24px);
     border-left: solid 2px var(--AccentColor);
@@ -134,7 +137,7 @@ header img {
 #Content h5 {
     color: var(--BlockTextColor);
     margin: 6px 0 6px 0 ;
-    padding-left: 1px;
+    padding-left: 7px;
     font-family: var(--TextFont);
     font-size: clamp(12px, 6vw, 22px);
     border-left: solid 2px var(--AccentColor);
@@ -143,7 +146,7 @@ header img {
 #Content h6 {
     color: var(--BlockTextColor);
     margin: 6px 0 6px 0 ;
-    padding-left: 1px;
+    padding-left: 7px;
     font-family: var(--TextFont);
     font-size: clamp(12px, 5.5vw, 18px);
     border-left: solid 2px var(--AccentColor);
@@ -154,6 +157,12 @@ header img {
     font-weight: bold;
     text-decoration: underline;
     font-size: clamp(12px, 5.5vw, 16px);
+}
+
+#Content blockquote {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 6px;
+    border-left: solid 3px var(--SubAccentColor);
 }
 
 #Share {
