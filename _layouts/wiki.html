@@ -4,41 +4,25 @@
     <meta charset='utf-8'>
     <title>{{ page.title }} - Misskey wiki</title>
     <link rel="stylesheet" href="/assets/css/flat.css">
-    <link rel="stylesheet" href="/assets/css/frame.css">
-    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/main.js"></script>
   </head>
   <body>
-    <header id="PcHeader">
-        <div>
-            <h1 class="m3 themeNaviTextColor">MisskeyWiki</h1>
-        </div>
-        <div>
-            <nav>
-                <a class="m4 themeNaviTextColor" href="/">Home</a>
-            </nav>
-        </div>
+    <header>
+        <h1>MisskeyWiki</h1>
+        <button><img src="/assets/img/icon/menu.webp" alt="Menu"></button>
     </header>
 
-    <header id="MobHeader">
-        <div>
-            <h1 class="m3 themeNaviTextColor">MisskeyWiki</h1>
-        </div>
-        <div>
-            <button><img class="naviIcon" src="/assets/img/icon/menu.webp" alt="Menu"></button>
-        </div>
-    </header>
-
-    <div id="Main">
-        <div>
-            {{ content }}
-        </div>
-        <div id="Share" style="display: none;">
-            <a href="">Copy</a>
-            <a href="">Misskey</a>
-            <a href="">Mastodon</a>
-            <a href="">Twitter</a>
-            <a href="">LINE</a>
-            <a href="">Pocket</a>
+    <div id="Content">
+        {{ content }}
+    </div>
+    <div class="block">
+        <h1 class="h1">この記事を共有する</h1>
+        <div id="Share" >
+            <button class="copy" onclick="Core.Copy();">Copy</button>
+            <button class="twitter" onclick="Core.Twitter();">Twitter</button>
+            <button class="line" onclick="Core.Line();">LINE</button>
+            <button class="pocket" onclick="Core.Pocket();">Pocket</button>
         </div>
     </div>
   </body>

@@ -1,1 +1,1 @@
-[Edit guide](https://wiki.misskey.jp/info/edit-guide)
+[](https://wiki.misskey.jp/info/edit-guide.md)

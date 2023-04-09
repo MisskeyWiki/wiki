@@ -196,7 +196,13 @@ Version:0.0.0β.Mw(2023/03/20)
         vertical-align: baseline;
         -webkit-border-radius : 0;
     }
-    
+
+    /*
+    input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime-local"] {
+        background-color: #8a2be2;
+    }
+    */
+
     input[type="text"],input[type="search"],input[type="tel"],input[type="url"],input[type="email"],input[type="password"],input[type="datetime"],input[type="number"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime-local"],input[type=""],input[type=""],input[type=""] {
         border: solid 1px #000000;
     }
@@ -237,6 +243,96 @@ Version:0.0.0β.Mw(2023/03/20)
         -webkit-border-radius : 0;
         -webkit-appearance: none;
     }
+    /*
+    input[type="checkbox"] {
+        margin: 0;
+        padding: 0;
+        border: solid 1px #000000;
+        border-radius: 0;
+        width: 16px;
+        height: 16px;
+        appearance: none;
+        -webkit-appearance: none;
+        -webkit-border-radius : 0;
+        position: relative;
+    }
+    input[type="checkbox"]:checked {
+        background-color: rgb(0, 145, 255);
+    }
+    input[type="checkbox"]:checked::after {
+        position: absolute;
+        content: "";
+        color: #FFFFFF;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    */
+    /*
+    input[type="radio"] {
+        margin: 0;
+        padding: 0;
+        border: solid 1px #000000;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        appearance: none;
+        -webkit-appearance: none;
+        -webkit-border-radius : 0;
+    }
+    input[type="radio"]:checked {
+        background-color: rgb(0, 145, 255);
+    }
+    */
+    /*
+    input[type="checkbox"]:checked::after {
+        position: absolute;
+        color: #FFFFFF;
+        content: "L";
+        top: -1px;
+        left: 2px;
+        width: 14px;
+        height: 14px;
+        text-align: center;
+        transform: scaleX(-1) rotate(-45deg);
+    }
+    */
+
+    /*
+    input[type="checkbox"]::after {
+        position: absolute;
+        background-color: #000000;
+        content: "a";
+        width: 10px;
+        height: 10px;
+    }
+    */
+
+    /*
+    input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 16px;
+        height: 16px;
+        border: solid 1px #000000;
+    }
+    input[type="checkbox"]:checked {
+        background-color: rgb(0, 145, 255);
+    }
+    input[type="checkbox"]:checked::after {
+        position: absolute;
+        color:#ffff00;
+        content: "L";
+        width: 14px;
+        height: 14px;
+        margin-top: -5px;
+        transform: scaleX(-1) rotate(-45deg);
+    }
+    */
 
     /* Line */
     hr {
@@ -269,6 +365,21 @@ Version:0.0.0β.Mw(2023/03/20)
     thead,tbody,tfoot {
 
     }
+
+    /*
+    Not Support
+    Block: area,canvas,iframe,map,meter,object,progress
+    Inline: audio,video,input(range,file,image,checkbox,radio)
+    Other: embed,
+    INFO:
+    audio,video -> MediaJS
+    meter,progress -> MeterJS
+    PDFViewJS(PDF埋め込み)
+    EmbedJS(外部ファイル埋め込み)
+    InputLimiterJS(Input制限(全端末対応))
+    InputJS(時間や色選択やファイルなどの入力を同じデザインで提供する)(ポップアップ)
+    RangeCSS(InputのRangeをいい感じにしてくれるCSS達)
+    */
 
     *::-webkit-scrollbar {
         display:none;
